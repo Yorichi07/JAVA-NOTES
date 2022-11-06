@@ -498,5 +498,26 @@ Java Interface also represent the IS-A relationship.
 
 It cannot be instantiated.
 
-Interface fields are public and static and final by default and the methods are public and abstract.
-hello 
+Interface fields are public,static and final by default and the methods are public and abstract.
+For Example-
+interface Print {          				interface Print {
+	int MIN=5;				-->				public static final int MIN =5;						
+	void print();							public abstract void print();
+}										}
+
+class implements interface 
+interface extends interface
+class extends class
+
+For Example -
+interface printable{  
+	void print();  
+}  
+class A6 implements printable{  
+	public void print(){System.out.println("Hello");}  
+  
+	public static void main(String args[]){  
+	A6 obj = new A6();  
+	obj.print();  
+ }  
+}  
